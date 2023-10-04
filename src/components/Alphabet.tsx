@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
-export default function Alphabet({ onLetterClick }) {
+interface AlphabetProps {
+    onLetterClick: (letter: string) => void;
+}
+
+export default function Alphabet({ onLetterClick }: AlphabetProps) {
 
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
